@@ -1,0 +1,142 @@
+@import url('mixins.less');
+
+.top {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+
+	.map {
+		width: 100%;
+		height: 350px;
+	}
+
+	img {		
+		width: 100%;
+		max-width: 100%;
+		z-index: -9999;
+	}
+
+	div.text {
+		p.headline {
+			position: absolute;
+			margin: 350px auto 0px;
+			font-family: @baseDisplayFont;
+			font-size: 75px;
+			letter-spacing: 5px;
+			color: #fff;
+			font-weight: bold;			
+			text-shadow: 0px 0px 3px darken(@textColor, 20%);
+		}
+	}
+}
+
+.block {	
+	background-color: #fff;
+
+	.row {
+		padding: 60px 0px 0px;
+
+		&:last-of-type {
+			padding-bottom: 60px;
+		}
+
+	}
+
+	h1, h2, h3, h4, h5, h6 {		
+		font-family: @baseDisplayFont;
+		font-weight: normal;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+	h2 {
+		font-size: 56px;
+	}
+	
+	.menu {
+	    text-align: center;    
+	    position: relative;
+	    margin-bottom: 30px;
+	    a {
+		    font-family: @baseFontFamily;
+		    font-weight: normal;
+		    font-size: 26px;
+		    line-height: 32px;
+		    margin: 0 20px;
+		    padding: 10px 12px;
+		    color: lighten(@textColor, 15%);
+		    cursor: pointer;	    
+		    border-bottom: 3px solid transparent;
+
+		    &:hover {
+				color: @textColor;
+				background: transparent;
+		    	text-decoration: none;	    	
+		    	border-bottom: 3px solid @colorBrown;
+		    	.border-radius(0px);
+		    }
+		}
+	}
+
+	.highlight {
+		background: @lightBackgroundColor;
+		p {
+			padding: 15px;
+			font-size: 20px;
+			line-height: 1.4em;			
+			font-style: italic;
+			font-family: @baseBoldFontFamily;
+		}
+	}
+
+	.timer-label,
+	#timer {
+		background-color: @colorBrown;
+		color: #fff;
+		text-align: center;
+		padding: 15px;		
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 18px;		
+	}
+
+	#timer {	
+		.num {			
+			display: inline-block;
+			margin: 4px auto;
+		}
+	}
+
+	h2.bottom-space{
+		margin: 0px 0px 50px 0px;
+	}
+
+	&.flower {
+		background: url('../assets/bg.png') right top no-repeat;
+	}
+
+	img.middle-image {
+		margin: 0px auto;
+		display: block;
+	}
+}
+
+footer {	
+	padding: 30px 0px;
+	background-color: @textColor;
+	color: #ffffff;
+
+	.brand {	    
+        font-family: @baseFontFamily;	    
+	    font-size: @baseFontSize + 4;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+	    padding: 0;
+        margin-top: 10px;
+	    margin-left: 0;
+	}
+}

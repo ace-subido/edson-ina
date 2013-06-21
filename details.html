@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	<title>Edson and Ina</title> 
+     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" charset="utf-8"> 
+     <link rel="stylesheet" href="./css/bootstrap-responsive.min.css" type="text/css" charset="utf-8"> 
+    <link rel="stylesheet" href="./css/styles.min.css" type="text/css" charset="utf-8">      
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      footer {
+        height: 60px;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
+     
+</head>
+<body>
+    <div id="wrap">    
+        <div class="top">            
+            <div class="map"></div>            
+        </div>
+        <div class="block flower">
+            <div class="container">
+                <div class="row">
+                    <div class="menu">
+                      <a href="index.html">The Couple</a>
+                      <a href="proposal.html">The Proposal</a>
+                      <a href="details.html">Wedding Details</a>
+                      <a href="registry.html">Registry</a>
+                    </div>
+                </div>               
+                <div class="row">
+                  <div class="offset1 span10">
+                       <h3>Directions</h3>
+                       <br />
+                       <img src="./assets/directions.png" alt="" class="middle-image" />
+                       <br />
+                       <p>RSVP with Patty Villa (+632) 8243687 or (+63917) 4513064</p>
+                       <p>tannedforlife@gmail.com</p>
+                  </div>                  
+                </div>
+                <div class="row">
+                  <div class="offset1 span10">
+                    <h2 class="bottom-space">
+                      Schedule
+                    </h2>
+                    <img src="./assets/schedule.png" alt="" class="middle-image" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset1 span10">
+                    <hr />                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset1 span10">
+                    <h2>
+                      Attire and Color Palette
+                    </h2>                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="offset1 span4">                    
+                    <img src="./assets/attire.png" alt="" class="middle-image"/>
+                  </div>                 
+                  <div class="span6"> 
+                    <h3>For the men</h3>                  
+                    <p>Dark suit. No tie needed.</p>
+                    <p class="muted"><i>
+                      *The Groom requests that he'll be the only one wearing a light grey suit.
+                    </i></p>
+                    <hr />
+                    <h3>For the women</h3>
+                   <p>Plain colored cocktail dresses. No bold prints.</p>
+                    <p class="muted"><i>
+                      *The Bride requests that she'll be the only one wearing a long dress.
+                    </i></p>   
+                    <p>Here's the color palette for the women:</p><br />
+                    <img src="./assets/palette.png" alt="" />
+                  </div>
+                  
+                </div>
+            </div>            
+        </div>
+        <div id="push"></div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>  
+    <script src="./js/jquery.gmap.min.js"></script> 
+    <script type="text/javascript">        
+        $(document).ready(function(){
+            $(".map").gMap({ controls: false,
+                scrollwheel: false,
+                draggable: true,                
+                latitude: 14.115434,
+                longitude: 120.962133,
+                zoom: 15, });
+        });
+
+    </script>
+</body>
+</html>
+
+

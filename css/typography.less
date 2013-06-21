@@ -1,0 +1,67 @@
+@import url('variables.less');
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../assets/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    src: url('../assets/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../assets/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../assets/OpenSans-Regular-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../assets/OpenSans-SemiBold-webfont.svg#OpenSansBold') format('svg');
+    src: url('../assets/OpenSans-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/OpenSans-SemiBold-webfont.woff') format('woff'),
+         url('../assets/OpenSans-SemiBold-webfont.ttf') format('truetype'),
+         url('../assets/OpenSans-SemiBold-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../assets/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    src: url('../assets/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/OpenSans-Light-webfont.woff') format('woff'),
+         url('../assets/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../assets/OpenSans-Light-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Riesling';
+    src: url('../assets/riesling-webfont.svg') format('svg');
+    src: url('../assets/riesling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/riesling-webfont.woff') format('woff'),
+         url('../assets/riesling-webfont.ttf') format('truetype'),
+         url('../assets/riesling-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, li, a {
+    font-family: @baseFontFamily;    
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+p, li {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    -webkit-font-smoothing: antialiased;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+p.center {
+    text-align: center;
+}
