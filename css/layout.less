@@ -3,17 +3,23 @@
 .top {
 	max-width: 100%;
 	width: 100%;
-	height: auto;
+	height: 400px;
+	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
+
+	&.maps {
+		height: 350px;
+	}
 
 	.map {
 		width: 100%;
 		height: 350px;
 	}
 
-	img {		
-		width: 100%;
+	img {	
+		margin-top: -10%;	
+		width: 100%;	
 		max-width: 100%;
 		z-index: -9999;
 	}
@@ -97,6 +103,10 @@
 		}
 	}
 
+	.inbet {
+		margin-top: 20px;
+	}
+
 	.timer-label,
 	#timer {
 		background-color: @colorBrown;
@@ -123,25 +133,32 @@
 		background: url('../assets/bg.png') right top no-repeat;
 	}
 
-	img.middle-image {
-		margin: 0px auto;
+	.middle-image {
+		margin: 20px auto 0px;
+		width: auto;		
 		display: block;
+	}
+
+	img.logo-img {
+		margin: 20px auto 0px;
+		width: auto;		
+		display: block;
+		height: 120px;
 	}
 }
 
 footer {	
-	padding: 30px 0px;
+	padding: 0px;
 	background-color: @textColor;
 	color: #ffffff;
 
 	.brand {	    
         font-family: @baseFontFamily;	    
-	    font-size: @baseFontSize + 4;
-        color: #ffffff;
+	    color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 2px;
 	    padding: 0;
-        margin-top: 10px;
-	    margin-left: 0;
+	    display: block;
+        margin: 10px 0px 0px;
 	}
 }
