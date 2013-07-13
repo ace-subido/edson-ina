@@ -53,16 +53,18 @@
                     <h2 class="bottom-space">
                       Photos
                     </h2>
-                    <div id="myCarousel" class="carousel slide">  
-                      <div class="carousel-inner">
-                          <div class="active item"><img src="http://www.placehold.it/1000x300" /></div>
-                          <div class="item"><img src="http://www.placehold.it/1000x300" /></div>
-                          <div class="item"><img src="http://www.placehold.it/1000x300" /></div>
-                      </div>
-    
-                      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                  </div>
+                    <div id="slides" class="carousel">                          
+                      <img src="./assets/proposal/prop1.jpg" alt="" />
+                      <img src="./assets/proposal/prop2.jpg" alt="" />
+                      <img src="./assets/proposal/prop3.jpg" alt="" />
+                      <img src="./assets/proposal/prop4.jpg" alt="" />
+                      <img src="./assets/proposal/prop5.jpg" alt="" />
+                      <img src="./assets/proposal/prop6.jpg" alt="" />
+                      <img src="./assets/proposal/prop7.jpg" alt="" />
+                      <img src="./assets/proposal/prop8.jpg" alt="" />
+                      <img src="./assets/proposal/prop9.jpg" alt="" />
+                      <img src="./assets/proposal/prop10.jpg" alt="" />                    
+                    </div>
                   </div>
                 </div>
             </div>            
@@ -71,11 +73,34 @@
     </div>
     <footer>
         <div class="container">
-            <div class="row">
-                
+            <div class="row"> 
+              <a href="index.html" class="brand">Edson and Ina</a>            
             </div>
         </div>
-    </footer>   
+    </footer> 
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/jquery.slides.min.js"></script>    
+    <script>        
+        $(function (){
+              $('#slides').slidesjs({
+                width: 800,
+                height: 533,
+                navigation: {
+                  active: false
+                },
+                pagination: {
+                  active: true,                    
+                  effect: "fade"                    
+                },
+                effect: {
+                  fade: {
+                    speed: 600,                      
+                    crossfade: true                     
+                  }
+                }                               
+              });
+        });    
+    </script>
 </body>
 </html>
 
