@@ -36,6 +36,17 @@
 	}
 }
 
+@media (max-width: 767px) {
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.block {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 .block {	
 	background-color: #fff;
 
@@ -143,6 +154,23 @@
 		width: auto;		
 		display: block;
 		height: 120px;
+	}
+
+	.store {
+		h4 {
+			margin: 0px;
+			a {
+				font-size: 26px;
+				line-height: 1.5em;
+				color: @textColor;
+				text-decoration: underline;
+				font-weight: bold;
+
+				&:hover {
+					color: lighten(@textColor, 20%);
+				}
+			}
+		}
 	}
 }
 
